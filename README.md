@@ -29,3 +29,10 @@ git remote add origin git@github.com:your_name/repository_name.git
 git remote remove origin
 ```
 
+### 3. GitHub快速更换绑定邮箱
+(1)点击头像
+(2)setting
+(3)Email
+(4)Add email address
+(5)新邮箱验证，返回github，将新邮箱验证Set Primary.
+

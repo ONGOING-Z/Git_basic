@@ -36,3 +36,8 @@ git remote remove origin
 (4)Add email address
 (5)新邮箱验证，返回github，将新邮箱验证Set Primary.
 
+### 4. git 推送
+```
+git push -u origin master
+```
+

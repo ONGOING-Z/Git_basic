@@ -18,3 +18,14 @@ git config --global user.email
 ```
 git config --global user.email "your email address"
 ```
+
+### 2. git 本地与远程仓库关联与解除
+- 关联
+```
+git remote add origin git@github.com:your_name/repository_name.git
+```
+- 解除关联
+```
+git remote remove origin
+```
+

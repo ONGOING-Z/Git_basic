@@ -45,3 +45,7 @@ git remote remove origin
 git push -u origin master
 ```
 
+### 5. github 如何删除仓库
+（1）settings
+（2）页面最下方'Delete this repository'
+

@@ -1,4 +1,4 @@
-# Using_Git
+# Git_basic
 Git的一些基本使用
 
 ### 1. git 查看修改用户名与密码

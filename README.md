@@ -54,3 +54,7 @@ git push -u origin master
 ssh -T git@github.com
 ```
 
+### 7. 在本地配置公钥
+```
+ssh-keygen -t rsa -C email_address
+```

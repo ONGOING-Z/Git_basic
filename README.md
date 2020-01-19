@@ -49,3 +49,8 @@ git push -u origin master
 （1）settings
 （2）页面最下方'Delete this repository'
 
+### 6. 查看本地与远程的连接
+```
+ssh -T git@github.com
+```
+

@@ -24,6 +24,11 @@ git config --global user.email "your email address"
 ```
 git remote -v
 ```
+- 建立新仓库
+```
+在github中建立一个新的仓库
+可以不要README.md文件
+```
 - 关联
 ```
 git remote add origin git@github.com:your_name/repository_name.git

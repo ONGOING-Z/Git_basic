@@ -63,3 +63,15 @@ ssh -T git@github.com
 ```
 ssh-keygen -t rsa -C email_address
 ```
+
+### 8. 重命名
+
+- git mv: move or rename a file, a directory.
+
+- description
+
+```
+git mv <source> <destination>
+git mv <source> <destination directory>
+```
+

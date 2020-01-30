@@ -75,3 +75,10 @@ git mv <source> <destination>
 git mv <source> <destination directory>
 ```
 
+### 9. github刷新
+
+在自己电脑本地`push`完文件后，想要在github中看看效果，
+
+*不要直接按F5进行整个网页的刷新*，
+
+点击自己**仓库的名称链接**进行刷新，这样会比较快。

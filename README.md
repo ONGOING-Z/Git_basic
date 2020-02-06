@@ -1,4 +1,7 @@
+[TOC]
+
 # Git_basic
+
 Git的一些基本使用
 
 ### 1. git 查看修改用户名与密码
@@ -82,3 +85,17 @@ git mv <source> <destination directory>
 *不要直接按F5进行整个网页的刷新*，
 
 点击自己**仓库的名称链接**进行刷新，这样会比较快。
+
+### 10. git基本操作
+
+```
+# 初始化仓库
+git init
+# 取消初始化仓库
+rm -rf .git/
+# 查看仓库状态（哪些文件提交了，哪些文件未提交）
+git status
+# 添加文件至提交列表
+git add filename
+```
+

@@ -78,6 +78,8 @@ git mv <source> <destination>
 git mv <source> <destination directory>
 ```
 
+*暂时还没看懂重命名文件夹是怎么做的。*
+
 ### 9. github刷新
 
 在自己电脑本地`push`完文件后，想要在github中看看效果，

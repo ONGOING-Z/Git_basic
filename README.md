@@ -101,3 +101,9 @@ git status
 git add filename
 ```
 
+### 11. git删除add中的文件（缓存文件）
+
+```
+git rm --cached file_name
+```
+

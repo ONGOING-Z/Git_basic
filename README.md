@@ -107,3 +107,14 @@ git add filename
 git rm --cached file_name
 ```
 
+
+
+### 发现github上的绿色格子几天没有亮了
+
+原因：之前github的邮箱更换了，但是本地主机的邮箱忘记更换。
+
+使用`git config user.email`查看是否和github上保留的邮箱是否一致，
+
+如果不一致，使用`git config user.email "your_address”`进行本地邮箱的更换。
+
+以上，完毕。

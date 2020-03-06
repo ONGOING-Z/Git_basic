@@ -99,6 +99,8 @@ rm -rf .git/
 git status
 # 添加文件至提交列表
 git add filename
+## 同时添加多个文件
+git add filename1 filename2 (中间以空格区分)
 ```
 
 ### 11. git删除add中的文件（缓存文件）

@@ -120,3 +120,10 @@ git rm --cached file_name
 如果不一致，使用`git config user.email "your_address”`进行本地邮箱的更换。
 
 以上，完毕。
+
+
+
+### git status显示中文乱码
+
+解决办法：`git config --global core.quotepath false`
+

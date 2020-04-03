@@ -109,7 +109,21 @@ git add filename1 filename2 (中间以空格区分)
 git rm --cached file_name
 ```
 
+### 12. Git每次push都需要输入用户名与密码
 
+首先，如果我们git clone的下载代码的时候是连接的https://而不是git@git (ssh)的形
+式，当我们操作git pull/push到远程的时候，总是提示我们输入账号和密码才能操作成功
+，频繁的输入账号和密码会很麻烦，也特别烦恼。
+
+**解决办法**
+```
+git bash进入你的项目目录，输入:
+git config --global credential.helper store
+```
+此项会在本地生成一个文本，上边记录你的账号和密码。
+
+然后你使用上述的命令配置好之后，再操作一次git pull，然后它会提示你输入账号密码
+，这一次之后就不需要再次输入密码了。
 
 ### 发现github上的绿色格子几天没有亮了
 

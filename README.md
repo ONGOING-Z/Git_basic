@@ -141,3 +141,8 @@ git config --global credential.helper store
 
 解决办法：`git config --global core.quotepath false`
 
+### 重写最后一个commit信息
+
+```
+git commit - amend
+```

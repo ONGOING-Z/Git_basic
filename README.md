@@ -144,5 +144,10 @@ git config --global credential.helper store
 ### 重写最后一个commit信息
 
 ```
-git commit - amend
+git commit --amend
 ```
+
+### 恢复git rm的文件
+
+First in the bash: `git reset`
+And second: `git checkout the_file_deleted`

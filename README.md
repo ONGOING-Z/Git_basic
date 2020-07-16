@@ -1,47 +1,66 @@
-[TOC]
-
 # Git_basic
+
+[TOC]
 
 Git的一些基本使用
 
+## Git
+
 ### 1. git 查看修改用户名与密码
+
 - 查看用户名
-```
+
+```git
 git config --global user.name
 ```
+
 - 修改用户名
-```
+
+```git
 git config --global user.name "your name"
 ```
+
 - 查看邮箱地址
-```
+
+```git
 git config --global user.email
 ```
+
 - 修改邮箱地址
-```
+
+```git
 git config --global user.email "your email address"
 ```
 
 ### 2. git 本地与远程仓库关联与解除
+
 - 查看远程仓库信息
-```
+
+```git
 git remote -v
 ```
+
 - 建立新仓库
-```
+
+```git
 在github中建立一个新的仓库
 可以不要README.md文件
 ```
+
 - 关联
-```
+
+```git
 git remote add origin git@github.com:your_name/repository_name.git
 ```
+
 - 解除关联
-```
+
+```bash
 git remote remove origin
 ```
 
 ### 3. GitHub快速更换绑定邮箱
+
 (1)点击头像
 (2)setting
 (3)Email
@@ -49,21 +68,25 @@ git remote remove origin
 (5)新邮箱验证，返回github，将新邮箱验证Set Primary.
 
 ### 4. git 推送
-```
+
+```git
 git push -u origin master
 ```
 
 ### 5. github 如何删除仓库
+
 （1）settings
 （2）页面最下方'Delete this repository'
 
 ### 6. 查看本地与远程的连接
-```
+
+```bash
 ssh -T git@github.com
 ```
 
 ### 7. 在本地配置公钥
-```
+
+```bash
 ssh-keygen -t rsa -C email_address
 ```
 
@@ -73,7 +96,7 @@ ssh-keygen -t rsa -C email_address
 
 - description
 
-```
+```bash
 git mv <source> <destination>
 git mv <source> <destination directory>
 ```
@@ -90,7 +113,7 @@ git mv <source> <destination directory>
 
 ### 10. git基本操作
 
-```
+```bash
 # 初始化仓库
 git init
 # 取消初始化仓库
@@ -105,21 +128,23 @@ git add filename1 filename2 (中间以空格区分)
 
 ### 11. git删除add中的文件（缓存文件）
 
-```
+```bash
 git rm --cached file_name
 ```
 
 ### 12. Git每次push都需要输入用户名与密码
 
-首先，如果我们git clone的下载代码的时候是连接的https://而不是git@git (ssh)的形
+首先，如果我们git clone的下载代码的时候是连接的`https://而不是git@git` (ssh)的形
 式，当我们操作git pull/push到远程的时候，总是提示我们输入账号和密码才能操作成功
 ，频繁的输入账号和密码会很麻烦，也特别烦恼。
 
-**解决办法**
-```
+解决办法
+
+```bash
 git bash进入你的项目目录，输入:
 git config --global credential.helper store
 ```
+
 此项会在本地生成一个文本，上边记录你的账号和密码。
 
 然后你使用上述的命令配置好之后，再操作一次git pull，然后它会提示你输入账号密码
@@ -135,15 +160,13 @@ git config --global credential.helper store
 
 以上，完毕。
 
-
-
 ### git status显示中文乱码
 
 解决办法：`git config --global core.quotepath false`
 
 ### 重写最后一个commit信息
 
-```
+```bash
 git commit --amend
 ```
 
@@ -154,23 +177,27 @@ And second: `git checkout the_file_deleted`
 
 ### 大大减少git clone下载数据量
 
-```
-$ git clone --depth=1
+```bash
+git clone --depth=1
 ```
 
 ### .gitignore文件配置
+
 1. 文件作用: 告诉git哪些文件是不需要管理的.
 2. 配置语法
-```
-/开头表示目录
-*开头通配
-?单个字符
-!不忽略某个文件或是目录
-```
+
+    ```text
+    /开头表示目录
+    *开头通配
+    ?单个字符
+    !不忽略某个文件或是目录
+    ```
+
 3. 需要自己创建.gitignore文件
 
 注意:
-```
+
+```text
 最后需要强调的一点是，如果你不慎在创建.gitignore文件之前就push了项目，那么即使你在.gitignore文件中写入新的过滤规则，这些规则也不会起作用，Git仍然会对所有文件进行版本管理。
 简单来说，出现这种问题的原因就是Git已经开始管理这些文件了，所以你无法再通过过滤规则过滤它们。因此一定要养成在项目开始就创建.gitignore文件的习惯，否则一旦push，处理起来会非常麻烦。
 

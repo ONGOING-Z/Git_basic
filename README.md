@@ -203,3 +203,9 @@ git clone --depth=1
 
 From: https://www.jianshu.com/p/699ed86028c2
 ```
+
+### git log
+
+查看提交历史。
+
+简洁的查看: `git log --oneline`

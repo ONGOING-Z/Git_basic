@@ -209,3 +209,9 @@ From: https://www.jianshu.com/p/699ed86028c2
 查看提交历史。
 
 简洁的查看: `git log --oneline`
+
+或者使用`git reflog`,这个每一行都有一个编号。
+
+### Git commit信息规范
+
+1. 好的提交信息应该是一个完整的句子。

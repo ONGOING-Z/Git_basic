@@ -215,3 +215,29 @@ From: https://www.jianshu.com/p/699ed86028c2
 ### Git commit信息规范
 
 1. 好的提交信息应该是一个完整的句子。
+
+### git获取更新到本地仓库
+
+#### 查看远程分支
+
+```bash
+git remote -v
+```
+
+#### 从远程分支获取最新版本到本地
+
+```bash
+git fetch origin master:temp
+```
+
+在本地新建一个temp分支，并将远程仓库的master分支的代码下载到本地分支上面
+
+#### 比较temp和本地仓库
+
+```bash
+git diff temp
+```
+
+#### 更新本地仓库
+
+确认修改之处后就可以更新本地仓库了，使用`git merge temp`即可更新本地仓库。

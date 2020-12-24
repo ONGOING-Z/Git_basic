@@ -212,9 +212,10 @@ From: https://www.jianshu.com/p/699ed86028c2
 
 或者使用`git reflog`,这个每一行都有一个编号。
 
-### Git commit信息规范
+### Git commit 规范
 
 1. 好的提交信息应该是一个完整的句子。
+2. 首字母要大写!
 
 ### git获取更新到本地仓库
 
